@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #040b14;
+  --background-color: #030911;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
@@ -564,7 +564,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -624,6 +624,10 @@ section,
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+}
+
+.about p {
+  line-height: 38px;
 }
 
 .about .content ul {
