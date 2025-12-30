@@ -8,35 +8,29 @@
 
 /*--------------------------------------------------------------
 # Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
-}
+  --default-font: "Inter", "Segoe UI", "Helvetica Neue", Arial, system-ui,
+    sans-serif;
+  --heading-font: "Inter", "Segoe UI", "Helvetica Neue", Arial, system-ui,
+    sans-serif;
+  --nav-font: "Inter", "Segoe UI", "Helvetica Neue", Arial, system-ui,
+    sans-serif;
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
+  --background-color: #f7f9fc;
+  --surface-color: #ffffff;
+  --default-color: #23272f;
+  --heading-color: #181c2a;
+  --accent-color: #2563eb; /* Professional deep blue */
+  --accent-gradient: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  --contrast-color: #ffffff;
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #a8a9b4; /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #6b7280;
+  --nav-hover-color: #2563eb;
+  --nav-mobile-background-color: #181c2a;
+  --nav-dropdown-background-color: #181c2a;
+  --nav-dropdown-color: #6b7280;
+  --nav-dropdown-hover-color: #2563eb;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -62,24 +56,19 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
 body {
+  font-size: 17px;
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
-}
-
-h1,
 h2,
 h3,
 h4,
@@ -87,6 +76,9 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-decoration: none;
 }
 
 /* PHP Email Form Messages
@@ -145,8 +137,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #fff;
+  background-color: #040b14;
   position: fixed;
   top: 0;
   left: 0;
@@ -156,15 +148,14 @@ h6 {
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  border-right: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 1px solid #040b14;
 }
 
 .header .profile-img img {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 8px solid #2c2f3f;
 }
 
 .header .logo {
@@ -180,8 +171,10 @@ h6 {
 .header .logo h1 {
   font-size: 24px;
   margin: 0;
+  padding: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: #fff;
+  font-family: var(--heading-font);
 }
 
 .header .social-links {
@@ -193,18 +186,18 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
+  background: #212431;
+  color: #fff;
   margin: 0 2px;
   border-radius: 50%;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   transition: 0.3s;
 }
 
 .header .social-links a:hover {
-  color: var(--contrast-color);
+  color: #fff;
   background: var(--accent-color);
 }
 
@@ -230,16 +223,16 @@ h6 {
   background-color: var(--accent-color);
   font-size: 22px;
   display: flex;
-  align-items: center;
+  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.13);
   justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  cursor: pointer;
+  background: var(--accent-gradient) !important;
   position: fixed;
   top: 15px;
   right: 15px;
-  z-index: 9999;
+  font-weight: 700;
   transition: background-color 0.3s;
 }
 
@@ -269,22 +262,24 @@ h6 {
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
-  padding: 15px 10px;
+  color: #a8a9b4;
+  padding: 12px 15px;
   font-family: var(--nav-font);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   align-items: center;
   white-space: nowrap;
   transition: 0.3s;
   width: 100%;
+  margin-bottom: 5px;
 }
 
 .navmenu a .navicon,
 .navmenu a:focus .navicon {
   font-size: 20px;
   margin-right: 10px;
+  color: #a8a9b4;
 }
 
 .navmenu a .toggle-dropdown,
@@ -300,7 +295,7 @@ h6 {
   border-radius: 50%;
   transition: 0.3s;
   flex-shrink: 0;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navmenu a .toggle-dropdown:hover,
@@ -309,13 +304,19 @@ h6 {
   color: var(--contrast-color);
 }
 
-.navmenu a:hover,
-.navmenu .active,
-.navmenu .active:focus {
-  color: var(--nav-hover-color);
+.navmenu a:hover {
+  color: #fff;
 }
 
-.navmenu a:hover .navicon,
+.navmenu .active,
+.navmenu .active:focus {
+  color: #fff;
+}
+
+.navmenu a:hover .navicon {
+  color: var(--accent-color);
+}
+
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
   color: var(--accent-color);
@@ -334,7 +335,7 @@ h6 {
 
 .navmenu .dropdown a,
 .navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
+  color: var(--nav-dropdown-color);
 }
 
 .navmenu .dropdown a:hover,
@@ -550,10 +551,11 @@ section,
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding: 80px 0;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero img {
@@ -564,62 +566,136 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  filter: saturate(0.98) contrast(0.92);
+  transform: scale(1.03);
+  transition: transform 10s linear;
 }
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
+  background: linear-gradient(
+      180deg,
+      rgba(2, 6, 23, 0.72),
+      rgba(2, 6, 23, 0.45)
+    ),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.06), rgba(59, 130, 246, 0.03));
+  backdrop-filter: blur(2px);
 }
 
 .hero .container {
   position: relative;
   z-index: 3;
+  animation: fadeInUp 850ms cubic-bezier(0.2, 0.9, 0.4, 1) both;
 }
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
-  font-weight: 700;
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--contrast-color);
+  text-shadow: 0 4px 18px rgba(37, 99, 235, 0.18);
+  font-family: var(--heading-font);
 }
 
-.hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
-}
-
-.hero p span {
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
-}
-
-.hero .social-links {
-  margin-top: 25px;
-}
-
-.hero .social-links a {
-  font-size: 24px;
+.hero-subtitle {
+  color: #e0e7ef;
+  margin-top: 8px;
+  font-size: clamp(15px, 1.6vw, 20px);
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
+  max-width: 65ch;
+  line-height: 1.5;
+  font-family: var(--default-font);
 }
 
-.hero .social-links a:hover {
-  color: var(--accent-color);
+.hero .btn {
+  background: var(--accent-gradient);
+  color: var(--contrast-color);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.1);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.hero .btn:hover,
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(6, 46, 68, 0.16);
+  opacity: 0.98;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 70px 0;
+  }
   .hero h2 {
-    font-size: 32px;
+    font-size: clamp(22px, 6vw, 36px);
+    text-align: left;
   }
+  .hero .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-subtitle {
+    font-size: 15px;
+    display: block;
+    max-width: 90%;
+  }
+  .hero .btn {
+    display: inline-block;
+    margin-top: 12px;
+  }
+}
 
-  .hero p {
-    font-size: 20px;
-  }
+/* Enhanced buttons */
+.btn-primary {
+  background: var(--accent-gradient) !important;
+  border: none !important;
+  color: var(--contrast-color) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.1);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.18);
+  opacity: 0.98;
+}
+
+/* Stats cards */
+.stats .stats-item {
+  background: var(--surface-color);
+  border-left: 4px solid var(--accent-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.stats .stats-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.12);
 }
 
 /*--------------------------------------------------------------
@@ -726,6 +802,57 @@ section,
   background-color: var(--accent-color);
 }
 
+/* Enhanced styling for the skills list: present skills as chips in a responsive grid */
+.about .skills-grid,
+.skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  align-items: start;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-grid .skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--surface-color), black 2%);
+  box-shadow: 0 6px 18px rgba(12, 20, 30, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    background-color 0.18s ease;
+  color: var(--heading-color);
+  font-weight: 600;
+  font-family: var(--heading-font);
+  font-size: 14px;
+}
+
+.skills-grid .skill-chip i {
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 0;
+}
+
+.skills-grid .skill-chip:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(12, 20, 30, 0.12);
+  background: color-mix(in srgb, var(--surface-color), black 4%);
+}
+
+@media (max-width: 767px) {
+  .skills-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .skills-grid .skill-chip {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -799,8 +926,9 @@ section,
   cursor: pointer;
   display: inline-block;
   padding: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color);
   margin: 0 10px;
   line-height: 1;
   text-transform: uppercase;
@@ -845,6 +973,9 @@ section,
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.6);
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
@@ -858,15 +989,11 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info p {
-  position: absolute;
-  bottom: 10px;
+  position: static;
+  margin: 10px 0 0 0;
   text-align: center;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link,
@@ -914,59 +1041,6 @@ section,
   width: 54px;
   height: 54px;
   border-radius: 50%;
-
-  /* Enhanced styling for the skills list: present skills as chips in a responsive grid */
-  .about .skills-grid,
-  .skills .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px 18px;
-    align-items: start;
-    margin-top: 10px;
-  }
-
-  .skills-grid li {
-    list-style: none;
-  }
-
-  .skills-grid .skill-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    background: color-mix(in srgb, var(--surface-color), black 2%);
-    box-shadow: 0 6px 18px rgba(12, 20, 30, 0.06);
-    transition: transform 0.18s ease, box-shadow 0.18s ease,
-      background-color 0.18s ease;
-    color: var(--heading-color);
-    font-weight: 600;
-    font-family: var(--heading-font);
-    font-size: 14px;
-  }
-
-  .skills-grid .skill-chip i {
-    color: var(--accent-color);
-    font-size: 14px;
-    line-height: 0;
-  }
-
-  .skills-grid .skill-chip:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 30px rgba(12, 20, 30, 0.12);
-    background: color-mix(in srgb, var(--surface-color), black 4%);
-  }
-
-  @media (max-width: 767px) {
-    .skills-grid {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-      gap: 10px;
-    }
-    .skills-grid .skill-chip {
-      font-size: 15px;
-      padding: 12px 16px;
-    }
-  }
   transition: 0.5s;
   border: 1px solid var(--accent-color);
   margin-right: 20px;
@@ -1003,6 +1077,22 @@ section,
 .services .service-item .description {
   line-height: 24px;
   font-size: 14px;
+}
+
+.services .service-item .skill-chips {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.services .service-item .skill-chip {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------

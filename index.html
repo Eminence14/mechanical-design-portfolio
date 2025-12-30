@@ -1,879 +1,1095 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Victor - Mechanical Engineer & Product Designer</title>
+    <meta
+      content="Mechanical &amp; product design engineer — portfolio showcasing manufacturable CAD, mechanical assemblies, and product design projects."
+      name="description"
+    />
+    <meta
+      content="mechanical engineer, product design, 3D modelling, CAD, portfolio"
+      name="keywords"
+    />
+    <meta name="theme-color" content="#040b14" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Victor Ibidunmoye — Mechanical Engineer & Product Designer</title>
-  <meta content="Mechanical engineer, product designer and web developer - portfolio of Victor Ibidunmoye showcasing CAD/CAM, 3D modelling, product design and web projects." name="description">
-  <meta content="mechanical engineer, product design, 3D modelling, CAD, portfolio" name="keywords">
-  <meta name="theme-color" content="#0d6efd">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <!-- preload main CSS to reduce render-blocking, then apply via onload -->
+    <link
+      rel="preload"
+      href="assets/css/main.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
 
-  <!-- Main CSS File -->
-  <!-- preload main CSS to reduce render-blocking, then apply via onload -->
-  <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link href="assets/css/main.css" rel="stylesheet"></noscript>
-  <!-- preload hero image (above-the-fold) -->
-  <link rel="preload" as="image" href="assets/img/portfolio/render/automatic gutter cleaner/1.png">
+    <noscript><link href="assets/css/main.css" rel="stylesheet" /></noscript>
+  </head>
+  <body class="index-page">
+    <header id="header" class="header d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-  <img src="assets/img/picture.jpg" alt="Portrait of Victor Ibidunmoye" class="img-fluid rounded-circle" loading="eager" width="160" height="160">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Victor Ibidunmoye</h1>
-    </a>
-
-    <div class="social-links text-center" aria-label="Social links">
-      <a href="https://x.com/eminence1410" class="twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter (opens in new tab)"><i class="bi bi-twitter-x" aria-hidden="true"></i><span class="visually-hidden">Twitter</span></a>
-      <a href="mailto:ibidunmoyevictor2@gmail.com" class="email" aria-label="Send email"><i class="bi bi-envelope" aria-hidden="true"></i><span class="visually-hidden">Email</span></a>
-      <a href="https://www.instagram.com/mech__spawn" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in new tab)"><i class="bi bi-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a>
-      <a href="https://wa.me/+2347056682385" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in new tab)"><i class="bi bi-whatsapp" aria-hidden="true"></i><span class="visually-hidden">WhatsApp</span></a>
-      <a href="https://www.linkedin.com/in/victoribidunmoye" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)"><i class="bi bi-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#testimonials"><i class="bi bi-person navicon"></i> Testimonials</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-  <img src="assets/img/portfolio/render/automatic gutter cleaner/1.png" alt="Automatic gutter cleaner render" data-aos="fade-in" class="" loading="lazy" width="1200" height="700">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <h2>Victor Ibidunmoye</h2>
-    <p>A <span class="typed"
-      data-typed-items="Mechanical Engineer, Product Designer, Web Developer, CAD/CAM Specialist, 3D Modeller">Mechanical
-      Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
-      class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      <div class="profile-img">
+        <img
+          src="assets/img/my-profile-img.jpg"
+          alt=""
+          class="img-fluid rounded-circle"
+        />
       </div>
 
-    </section><!-- /Hero Section -->
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center justify-content-center"
+      >
+        <h1 class="sitename">Victor Ibidunmoye</h1>
+      </a>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+      <div class="social-links text-center">
+        <a href="https://www.linkedin.com/in/victoribidunmoye" class="linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="https://x.com/eminence1410" class="twitter"
+          ><i class="bi bi-twitter-x"></i
+        ></a>
+        <a href="https://www.instagram.com/mech__spawn" class="instagram"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>
-          I design practical, manufacturable products and polished web experiences. With hands-on expertise in CAD/CAM,
-          3D modelling and front-end development, I translate ideas into prototypes and production-ready solutions.
-          My focus is clear documentation, user-centered design and efficient workflows that move projects from concept
-          to completion.
-        </p>
-        <p>Have a project or idea? I’m available for collaboration and freelance work.</p>
-      </div><!-- End Section Title -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bi bi-file-earmark-text navicon"></i> Resume</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bi bi-images navicon"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#services"
+              ><i class="bi bi-hdd-stack navicon"></i> Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img
+          src="assets/img/portfolio/render/automatic gutter cleaner/1.png"
+          alt="Automatic gutter cleaner render"
+          data-aos="fade-in"
+          class=""
+          loading="lazy"
+          width="1200"
+          height="700"
+        />
 
-        <div class="row gy-4 justify-content-center">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2>Victor Ibidunmoye</h2>
+          <p class="hero-subtitle">
+            <strong>Mechanical &amp; Product Design Engineer</strong><br />
+            <small
+              >Specializing in SolidWorks-based CAD, mechanical assemblies, and
+              manufacturing-ready design.</small
+            >
+          </p>
+          <p class="mt-3">
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              aria-label="Contact: Open to mechanical roles"
+              >Open to Mechanical &amp; Product Design roles — Contact</a
+            >
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
             <div class="col-lg-4">
-            <img src="assets/img/portfolio/render/mechanical painter/1.png" style="border-radius: 10px;" class="img-fluid" alt="Mechanical painter project render" loading="lazy">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Mechanical Designer &amp; Web Developer</h2>
-            <p class="fst-italic py-3">
-              I blend engineering rigor with practical product design and front-end development to deliver user-focused,
-              manufacturable solutions.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>-->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nick:</strong> <span>kunile</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(+234) 70 5668 2385</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>ibidunmoyevictor2@gmail.com</span></li>
-
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Technology:</strong> <span></span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>School:</strong> <span>University of Ibadan,
-                      Nigeria</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
+              <img
+                src="assets/img/portfolio/render/mechanical painter/1.png"
+                style="border-radius: 10px"
+                class="img-fluid"
+                alt="Mechanical painter project render"
+                loading="lazy"
+              />
             </div>
-            <p class="py-3">
-            <h2>Inspiration & Approach</h2>
-            <blockquote>
-              "Engineers shape the future through practical creativity and careful execution." — <cite>James Kip Finch</cite>
-            </blockquote>
-            <blockquote>
-              "Design should solve problems intuitively and reliably." — <cite>Design Practice</cite>
-            </blockquote>
-            <blockquote>
-              "Measure, iterate, and improve. Repeat until it works." — <cite>Development Philosophy</cite>
-            </blockquote>
-            </p>
+            <div class="col-lg-8 content">
+              <h2>Mechanical &amp; Product Design Engineer</h2>
+              <p class="fst-italic py-3">
+                I am a Mechanical and Product Design Engineer focused on
+                creating
+                <strong
+                  >manufacturable, production-ready mechanical designs</strong
+                >. My work centers on
+                <strong
+                  >3D CAD modeling, mechanical assemblies, and design for
+                  manufacturing</strong
+                >, with attention to tolerances, GD&amp;T, and real-world
+                constraints. I typically work on consumer products, small
+                machinery, and tooling aimed at improving usability and reducing
+                manufacturing cost.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- /About Section -->
 
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Satisfied Clients</strong> <span>Engineering solutions that deliver value</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Projects Delivered</strong> <span>Concept to production-ready results</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Support Hours</strong> <span>Reliable assistance when needed</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Team Members</strong> <span>Collaborative and focused</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>
+            Experience highlights that demonstrate practical engineering and
+            product design skills focused on delivering manufacturable designs
+            and clear technical artifacts.
+          </p>
         </div>
+        <!-- End Section Title -->
 
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-  <h2>Skills &amp; Technologies</h2>
-  <p>A curated toolbox that bridges engineering and software to deliver practical solutions.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content ">
-
+        <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <h3>Skills</h3>
-              <ul class="skills-grid" style="list-style: none;">
-                <li><i class="bi bi-chevron-right"></i><span>3D Modelling</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Computer-Aided Design (CAD)</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Computer-Aided Manufacturing (CAM)</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Drafting and Technical Drawing</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>3D Printing / Additive Manufacturing</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Prototyping</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Mechanical Design</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Technical Writing</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Mechatronics Basics</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Machine Design</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Materials Science</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Thermodynamics</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Fluid Mechanics</span></li>
-              </ul>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Internship</h3>
+
+              <div class="resume-item">
+                <h4>PRODUCT DESIGN INTERN, COSTECH COMPUTERS</h4>
+                <ul>
+                  <li>
+                    Produced high-precision 2D drafts and annotations using
+                    AutoCAD for technical drawings.
+                  </li>
+                  <li>
+                    Designed detailed 3D product models and prototypes using
+                    Autodesk Fusion 360.
+                  </li>
+                  <li>
+                    Created comprehensive technical documentation and visual
+                    representations for product portfolios.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>MEP &amp; Design Intern, Palfe Associates</h4>
+                <!-- <h5>[Insert Year]</h5>
+                <p><em>Palfe Associates, [Insert City], Nigeria</em></p> -->
+                <ul>
+                  <li>
+                    Designed and analyzed mechanical, electrical, and plumbing
+                    (MEP) layouts for residential and commercial infrastructure.
+                  </li>
+                  <li>
+                    Utilized AutoCAD and Revit to create accurate architectural
+                    models and clash-detection reports.
+                  </li>
+                  <li>
+                    Conducted on-site evaluations to verify design compliance
+                    and resolve installation conflicts in real-time.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>
+                  Bachelor of Science (B.Sc) - <b>Mechanical Engineering</b>
+                </h4>
+                <h5>2019 - 2026</h5>
+                <p><em>University of Ibadan, Ibadan, NIGERIA</em></p>
+                <p>
+                  Focus: Advanced Thermodynamics, Machine Design, and
+                  Manufacturing Processes.
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
             </div>
-            <div class="col-lg-6">
-              <h3>Technologies</h3>
-              <ul class="skills-grid" style="list-style: none;">
-                <li><i class="bi bi-chevron-right"></i><span>AutoCAD</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Autodesk Fusion 360</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>MATLAB</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Python</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>Simulink</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>SolidWorks</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>G-code (for CNC machines)</span></li>
-                <li><i class="bi bi-chevron-right"></i><span>JavaScript (for web-based engineering tools)</span></li>
-              </ul>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Sheet Metal Works Engineer</h4>
+                <h5>2022 - 2023</h5>
+                <p><em>Aseyori Ventures, Barika, NIGERIA </em></p>
+                <ul>
+                  <li>
+                    Executed aluminum fabrication for structural components,
+                    ensuring tight tolerances.
+                  </li>
+                  <li>
+                    Optimized production workflows to reduce material waste and
+                    increase output.
+                  </li>
+                  <li>
+                    Enforced quality control standards across manufacturing
+                    processes.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Mechanical Machines Intern</h4>
+                <h5>2019 - 2020</h5>
+                <p><em>Aje Machine & Sons, Igirigiri, NIGERIA</em></p>
+                <ul>
+                  <li>
+                    Diagnosed and repaired complex mechanical systems and
+                    industrial machinery.
+                  </li>
+                  <li>
+                    Streamlined workshop operations to improve maintenance
+                    turnaround times.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
             </div>
           </div>
-
         </div>
+      </section>
+      <!-- /Resume Section -->
 
-      </div>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>
+            A selection of engineering projects demonstrating proficiency in
+            Design for Manufacturing (DfM), mechanism analysis, and
+            production-ready CAD documentation.
+          </p>
+        </div>
+        <!-- End Section Title -->
 
-    </section><!-- /Skills Section -->
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">ALL</li>
+              <li data-filter=".filter-draft">DRAFTING</li>
+              <li data-filter=".filter-machine">MACHINES</li>
+              <li data-filter=".filter-product">PRODUCTS</li>
+              <li data-filter=".filter-others">OTHERS</li>
+            </ul>
+            <!-- End Portfolio Filters -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/2 stroke engine/1.png"
+                    class="img-fluid"
+                    alt="Two stroke engine with compressor render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>TWO STROKE ENGINE WITH COMPRESSOR</h4>
+                    <p>
+                      Compact engine design integrating crankshaft and
+                      compressor. Used for space-saving, efficient industrial
+                      systems.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Concept design, CAD modeling. Focus:
+                      Manufacturability and dual-function engineering.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/2 stroke engine/4.png"
+                      title="TWO STROKE ENGINE WITH COMPRESSOR"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Experience highlights that demonstrate practical engineering, product design, and web development skills focused
-        on delivering results and clear technical artifacts.</p>
-      </div><!-- End Section Title -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/Zenith knife/4.png"
+                    class="img-fluid"
+                    alt="Zenith knife render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>ZENITH KNIFE</h4>
+                    <p>
+                      Motorized kitchen knife with a crank-slider rotary blade.
+                      Features continuous rotation for fast, safe cutting.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Mechanism design, CAD, prototyping. Focus: User
+                      safety and manufacturability.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/Zenith knife/2.png"
+                      title="ZENITH KNIFE: AUTOMATED ROTARY KITCHEN BLADE"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
 
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-draft"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/drafting/1.png"
+                    class="img-fluid"
+                    alt="Drafting example"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>DRAFTING AND ANNOTATION</h4>
+                    <p>
+                      Technical drafting including layers, layouts, and blocks.
+                      Ensures clear manufacturing documentation.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: CAD drafting, standards compliance. Focus: Clarity
+                      and production-readiness.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/drafting/1.png"
+                      title="DRAFTING AND ANNOTATION"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/gen washer/1.png"
+                    class="img-fluid"
+                    alt="Diesel generator tank washer render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>DIESEL GENERATOR TANK WASHER</h4>
+                    <p>
+                      Rotating brush system for cleaning diesel generator tanks.
+                      Improves reliability and reduces manual labor.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Mechanism design, CAD, prototyping. Focus:
+                      Maintenance efficiency and manufacturability.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/gen washer/3.png"
+                      title="DIESEL GENERATOR TANK WASHER"
+                      data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-draft"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/drafting/2.png"
+                    class="img-fluid"
+                    alt="Drafting example"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>DRAFTING AND ANNOTATION</h4>
+                    <p>
+                      Technical drafting including layers, layouts, and blocks.
+                      Ensures clear manufacturing documentation.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: CAD drafting, standards compliance. Focus: Clarity
+                      and production-readiness.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/drafting/2.png"
+                      title="DRAFTING AND ANNOTATION"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/gravity powered system/1.png"
+                    class="img-fluid"
+                    alt="Gravity powered grinder render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>GRAVITY POWERED GRINDER</h4>
+                    <p>
+                      Grinder powered by gravity using weights on a shaft.
+                      Energy-efficient design requiring no external power.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Concept design, mechanism simulation. Focus: Energy
+                      efficiency and feasibility.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/gravity powered system/4.png"
+                      title="GRAVITY POWERED GRINDER"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/juice extractor/1.png"
+                    class="img-fluid"
+                    alt="Dual-sieve juice extractor render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>DUAL-SEIVE JUICE EXTRACTOR</h4>
+                    <p>
+                      Blender redesigned with dual-layer sieve and outflow pipe.
+                      Ensures efficient juice extraction.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Product redesign, CAD, prototyping. Focus:
+                      Functionality and user experience.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/juice extractor/2.png"
+                      title="DUAL-SEIVE JUICE EXTRACTOR"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/Super Pounder/3.png"
+                    class="img-fluid"
+                    alt="Super Pounder render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SUPER POUNDER</h4>
+                    <p>
+                      Motor-driven machine for pounding yam using a crank-slider
+                      mechanism. Preserves tradition while reducing labor.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Mechanism design, CAD, prototyping. Focus: Cultural
+                      fit and efficiency.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/Super Pounder/1.png"
+                      title="SUPER POUNDER: AUTOMATED YAM PROCESSOR"
+                      data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-draft"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/drafting/3.png"
+                    class="img-fluid"
+                    alt="Drafting example"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>DRAFTING AND ANNOTATION</h4>
+                    <p>
+                      Technical drafting including layers, layouts, and blocks.
+                      Ensures clear manufacturing documentation.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: CAD drafting, standards compliance. Focus: Clarity
+                      and production-readiness.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/drafting/3.png"
+                      title="DRAFTING AND ANNOTATION"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/foot operated water pump/1.png"
+                    class="img-fluid"
+                    alt="Foot operated water pump render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>FOOT OPERATED WATER PUMP</h4>
+                    <p>
+                      Pedal-powered water pump using bevel gears and
+                      crank-slider. Enables water access without electricity.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Mechanism design, CAD, prototyping. Focus:
+                      Sustainability and reliability.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/foot operated water pump/5.png"
+                      title="FOOT OPERATED WATER PUMP"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/adjustable ceiling cleaner/1.png"
+                    class="img-fluid"
+                    alt="Adjustable ceiling cleaner render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>ADJUSTABLE CEILING CLEANER</h4>
+                    <p>
+                      Cleaning tool with retractable arm and rotating brush.
+                      Extends reach to remove dirt from elevated surfaces.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Product design, CAD, prototyping. Focus:
+                      Accessibility and effectiveness.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/adjustable ceiling cleaner/5.png"
+                      title="ADJUSTABLE CEILING CLEANER"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/render/solar panel wiper/1.png"
+                    class="img-fluid"
+                    alt="Solar panel wiper render"
+                    loading="lazy"
+                  />
+                  <div class="portfolio-info">
+                    <h4>SOLAR PANEL WIPER</h4>
+                    <p>
+                      Automated wiper system for rooftop solar panels. Adapts
+                      car wiper tech to maintain efficiency.
+                    </p>
+                    <p class="portfolio-role">
+                      Role: Mechanism adaptation, CAD, prototyping. Focus:
+                      Renewable energy efficiency.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/render/solar panel wiper/2.png"
+                      title="SOLAR PANEL WIPER"
+                      data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>
+            I provide end-to-end product design and engineering services—and am
+            also open to full-time or contract engineering roles. From CAD
+            modeling and prototyping to manufacturing-ready documentation, I
+            deliver practical, well-documented work that moves projects forward.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >3D Modeling &amp; Product Design</a
+                  >
+                </h4>
+                <p class="description">
+                  From concept sketches to production-ready CAD models—visuals
+                  and files ready for manufacturing and prototyping.
+                </p>
+                <div class="skill-chips">
+                  <span class="skill-chip">Fusion 360</span>
+                  <span class="skill-chip">Rendering</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-card-checklist"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >Computer-Aided Design (CAD)</a
+                  >
+                </h4>
+                <p class="description">
+                  Accurate, well-documented CAD deliverables tailored for
+                  manufacturing and assembly.
+                </p>
+                <div class="skill-chips">
+                  <span class="skill-chip">SolidWorks</span>
+                  <span class="skill-chip">Assemblies</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >Drafting &amp; Technical Drawing</a
+                  >
+                </h4>
+                <p class="description">
+                  Precise drawings and annotations to reduce manufacturing
+                  ambiguity and speed up production.
+                </p>
+                <div class="skill-chips">
+                  <span class="skill-chip">AutoCAD</span>
+                  <span class="skill-chip">GD&amp;T</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-binoculars"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >3D Printing</a
+                  >
+                </h4>
+                <p class="description">
+                  Rapid prototyping to accelerate your product development
+                  cycle. Turn digital designs into physical models quickly and
+                  cost-effectively.
+                </p>
+                <div class="skill-chips">
+                  <span class="skill-chip">Prototyping</span>
+                  <span class="skill-chip">Slicing</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-brightness-high"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >Machine Design</a
+                  >
+                </h4>
+                <p class="description">
+                  Custom machinery solutions tailored to your specific needs.
+                  Optimize performance and efficiency in your manufacturing
+                  processes.
+                </p>
+                <div class="skill-chips">
+                  <span class="skill-chip">Mechanisms</span>
+                  <span class="skill-chip">Analysis</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <div>
+                <h4 class="title">
+                  <a href="service-details.html" class="stretched-link"
+                    >Computer-Aided Manufacturing</a
+                  >
+                </h4>
+                <p class="description">
+                  Seamless transition from design to production. Improve
+                  manufacturing accuracy and reduce production time with CAM
+                  expertise.
+                </p>
+                <div class="skill-chips">
+                  <span class="skill-chip">G-code</span>
+                  <span class="skill-chip">CNC</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            <b>Let's bring your idea to life.</b> If you have a project,
+            prototype, or product challenge, I offer consultation and freelance
+            services to help you move from concept to production. Get in touch
+            to discuss next steps.<br />
+            <span style="font-weight: 500; color: var(--accent-color)"
+              >Recruiters and engineering managers are welcome to reach out
+              regarding open roles or collaborations.</span
+            >
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>University of Ibadan, P.O.Box 200005</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i
+                    class="bi bi-telephone flex-shrink-0"
+                    aria-hidden="true"
+                  ></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+2347056682385">+234 (70) 5668 2385</a></p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>ibidunmoyevictor2@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Internship</h3>
-
-            <div class="resume-item pb-0">
-              <h4>COSTECH COMPUTERS</h4>
-              <p><em>COSTECH COMPUTERS specialize in implementing digital transformation solutions in Project
-                  management, Manufacturing, Architecture, Engineering & Construction (AEC), and other asset-intensive
-                  industries. They offer sales of software, trainings, certifications, implementation, onboarding and
-                  adoption support, consulting, and custom software development.</em></p>
-              <ul>
-                <li>Mastered 2D drafting and annotation techniques using AutoCAD, enhancing precision in technical
-                  drawings</li>
-                <li>Developed proficiency in 3D modeling with Autodesk Fusion, creating detailed product designs and
-                  prototypes</li>
-                <li><b>Designathon 2024: </b>Collaborated on diverse projects, applying CAD skills to real-world
-                  engineering challenges</li>
-                <li>Contributed to team efforts in product development, improving design efficiency and accuracy</li>
-                <li>Gained hands-on experience in translating client requirements into technical specifications</li>
-                <li>Contributed to the company's portfolio by producing high-quality visual representations of products
-                </li>
-                <li>Supported senior engineers in creating comprehensive technical documentation</li>
-                <li>Assisted in optimizing workflows between 2D drafting and 3D modeling processes</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Science (B.Sc) - <b>Mechanical Engineering</b> </h4>
-              <h5>2019 - Till Date</h5>
-              <p><em>University of Ibadan, Ibadan, NIGERIA</em></p>
-              <p>Pursuing a Bachelor's degree in Mechanical Engineering, with a strong foundation in core subjects
-                including Applied Thermodynamics, Materials Science, Fluid Dynamics, and Machine Design. Coursework
-                emphasizes both theoretical knowledge and practical application, preparing for real-world engineering
-                challenges.</p>
-            </div><!-- Edn Resume Item -->
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Sheet Metal Works Engineer</h4>
-              <h5>2022 - 2023</h5>
-              <p><em>Aseyori Ventures, Barika, NIGERIA </em></p>
-              <ul>
-                <li>Mastered aluminum fabrication techniques for windows, doors, and other products, demonstrating quick
-                  learning and adaptability</li>
-                <li>Collaborated effectively in a team environment, contributing to the successful completion of
-                  multiple projects</li>
-                <li>Exhibited strong work ethic by consistently meeting and exceeding production targets</li>
-                <li></li>
-                <li>Displayed critical thinking in optimizing production processes, improving efficiency and reducing
-                  material waste</li>
-                <li>Took the initiative in learning advanced fabrication techniques, showcasing a commitment to personal
-                  and professional growth</li>
-                <li>Interfaced with clients to understand project requirements, honing customer service and
-                  interpersonal skills</li>
-                <li>Participated in quality control processes, ensuring high standards of product excellence</li>
-                <li>Contributed innovative ideas for product design improvements, highlighting creativity and
-                  forward-thinking</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Mechanical Machines Intern</h4>
-              <h5>2019 - 2020</h5>
-              <p><em>Aje Machine & Sons, Igirigiri, NIGERIA</em></p>
-              <ul>
-                <li>Gained hands-on experience in diagnosing and repairing various mechanical systems, demonstrating
-                  practical problem-solving skills
-                </li>
-                <li>Collaborated effectively with senior mechanics, showcasing strong teamwork and communication
-                  abilities</li>
-                <li>Contributed to improving workshop efficiency by suggesting and implementing organizational
-                  improvements</li>
-                <li>Managed multiple repair projects simultaneously, developing strong time management and
-                  prioritization skills</li>
-                <li>Showed leadership potential by mentoring newer interns and assisting them in learning workshop
-                  procedures</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
+        <div class="copyright text-center">
+          <p>
+            © <span id="current-year"></span>
+            <strong class="px-1 sitename">Victor Ibidunmoye</strong>
+            <span>All Rights Reserved</span>
+          </p>
         </div>
-
       </div>
+    </footer>
 
-    </section><!-- /Resume Section -->
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Explore a diverse collection of projects that demonstrate Victor's expertise in mechanical engineering,
-          product design, and web development. From intricate 3D models to fully realized machine designs, each entry
-          represents a unique challenge met with creativity, technical precision, and a commitment to exceeding client
-          expectations.</p>
-      </div><!-- End Section Title -->
+    <!-- Vendor JS Files -->
+    <script
+      src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/vendor/php-email-form/validate.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+    <script
+      src="assets/vendor/purecounter/purecounter_vanilla.js"
+      defer
+    ></script>
+    <script
+      src="assets/vendor/waypoints/noframework.waypoints.js"
+      defer
+    ></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+    <script
+      src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"
+      defer
+    ></script>
+    <script
+      src="assets/vendor/isotope-layout/isotope.pkgd.min.js"
+      defer
+    ></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
-      <div class="container">
+    <!-- Main JS File -->
+    <script src="assets/js/main.js" defer></script>
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">ALL</li>
-            <li data-filter=".filter-draft">DRAFTING</li>
-            <li data-filter=".filter-machine">MACHINES</li>
-            <li data-filter=".filter-product">PRODUCTS</li>
-            <li data-filter=".filter-others">OTHERS</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine">
-              <div class="portfolio-content h-100">
-                <img src='assets/img/portfolio/render/2 stroke engine/1.png' class="img-fluid" alt="Two stroke engine with compressor render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>TWO STROKE ENGINE WITH COMPRESSOR</h4>
-                  <p>This compact power solution
-                      efficiently generates mechanical energy while simultaneously powering a compressor, optimizing
-                      space and enhancing overall system performance for various industrial applications</p>
-                  <a href='assets/img/portfolio/render/2 stroke engine/4.png'
-                    title="TWO STROKE ENGINE WITH COMPRESSOR" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src='assets/img/portfolio/render/Zenith knife/4.png' class="img-fluid" alt="Zenith knife render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>ZENITH KNIFE</h4>
-                  <p>Engineered an innovative kitchen tool featuring a motorized rotary blade system. This unique design incorporates a crank and slider mechanism powered by a rechargeable battery, enabling continuous blade rotation for enhanced cutting efficiency</p>
-                  <a href='assets/img/portfolio/render/Zenith knife/2.png'
-                    title="ZENITH KNIFE: AUTOMATED ROTARY KITCHEN BLADE" data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-draft">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/drafting/1.png" class="img-fluid" alt="Drafting example" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>DRAFTING AND ANNOTATION</h4>
-                  <p>DRAFTING, LAYERS, LAYOUTS, BLOCKS, AND ANNOTATION</p>
-                  <a href="assets/img/portfolio/drafting/1.png" title="DRAFTING AND ANNOTATION"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/gen washer/1.png" class="img-fluid" alt="Diesel generator tank washer render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>DIESEL GENERATOR TANK WASHER</h4>
-                  <p>This custom-engineered system features a rotating brush mechanism optimized for thorough interior tank cleaning. It ensures efficient maintenance of
-                      diesel generator tanks, enhancing operational reliability and extending equipment lifespan while
-                      minimizing downtime and manual labor requirements</p>
-                  <a href="assets/img/portfolio/render/gen washer/3.png" title="DIESEL GENERATOR TANK WASHER"
-                    data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-draft">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/drafting/2.png" class="img-fluid" alt="Drafting example" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>DRAFTING AND ANNOTATION</h4>
-                  <p>DRAFTING, LAYERS, LAYOUTS, BLOCKS, AND ANNOTATION</p>
-                  <a href="assets/img/portfolio/drafting/2.png" title="DRAFTING AND ANNOTATION" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/gravity powered system/1.png" class="img-fluid" alt="Gravity powered grinder render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>GRAVITY POWERED GRINDER</h4>
-                  <p>Conceptualized and designed an innovative, energy-efficient grinding mechanism utilizing
-                      gravitational potential energy. This unique system employs two opposing weights on a shaft,
-                      strategically positioned to create a continuous motion cycle
-                  </p>
-                  <a href="assets/img/portfolio/render/gravity powered system/4.png" title="GRAVITY POWERED GRINDER"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/juice extractor/1.png" class="img-fluid" alt="Dual-sieve juice extractor render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>DUAL-SEIVE JUICE EXTRACTOR</h4>
-                  <p>Redesigned a standard blender to create an efficient juice extraction system. Integrated a two-layer sieve mechanism and dedicated outflow pipe. This innovative design enhances functionality and user experience, transforming a common kitchen appliance into a specialized juice extractor</p>
-                  <a href="assets/img/portfolio/render/juice extractor/2.png" title="DUAL-SEIVE JUICE EXTRACTOR" data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/Super Pounder/3.png" class="img-fluid" alt="Super Pounder render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>SUPER POUNDER</h4>
-                  <p>Engineered an innovative machine that mechanizes traditional yam pounding. Incorporates a motor-driven crank and slider mechanism to replicate the vertical motion of manual pounding. This design preserves traditional food preparation methods while improving efficiency and reducing physical labor, demonstrating a blend of cultural sensitivity and modern engineering in kitchen appliance design</p>
-                  <a href="assets/img/portfolio/render/Super Pounder/1.png" title="SUPER POUNDER: AUTOMATED YAM PROCESSOR" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-draft">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/drafting/3.png" class="img-fluid" alt="Drafting example" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>DRAFTING AND ANNOTATION</h4>
-                  <p>DRAFTING, LAYERS, LAYOUTS, BLOCKS, AND ANNOTATION</p>
-                  <a href="assets/img/portfolio/drafting/3.png" title="DRAFTING AND ANNOTATION" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/foot operated water pump/1.png" class="img-fluid" alt="Foot operated water pump render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>FOOT OPERATED WATER PUMP</h4>
-                  <p>A pump that leverages human power for efficient water extraction. Features a pedal-driven system with bevel gears and a crank-slider mechanism, converting rotary foot motion into linear reciprocating pump action. This offers a sustainable, low-maintenance solution for water access in areas with limited electricity</p>
-                  <a href="assets/img/portfolio/render/foot operated water pump/5.png" title="FOOT OPERATED WATER PUMP" data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/adjustable ceiling cleaner/1.png" class="img-fluid" alt="Adjustable ceiling cleaner render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>ADJUSTABLE CEILING CLEANER</h4>
-                  <p>A versatile cleaning tool featuring a retractable arm and rotating brush head. This design extends to reach high ceilings, effectively removing dirt and cobwebs from elevated surfaces. Enhancing accessibility and effectiveness in ceiling maintenance</p>
-                  <a href="assets/img/portfolio/render/adjustable ceiling cleaner/5.png" title="ADJUSTABLE CEILING CLEANER" data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-others">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/render/solar panel wiper/1.png" class="img-fluid" alt="Solar panel wiper render" loading="lazy">
-                <div class="portfolio-info">
-                  <h4>SOLAR PANEL WIPER</h4>
-                  <p>Developed an automated cleaning system for rooftop solar panels, adapting automotive wiper technology for renewable energy maintenance. This innovative device enhances solar panel efficiency by regularly removing dust and debris, maximizing energy capture without manual intervention.</p>
-                  <a href="assets/img/portfolio/render/solar panel wiper/2.png" title="SOLAR PANEL WIPER" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>I provide end-to-end product design and engineering services—from CAD modeling and prototyping to web
-          delivery and deployment. Practical, well-documented work that moves projects forward.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">3D Modeling &amp; Product Design</a>
-              </h4>
-              <p class="description">From concept sketches to production-ready CAD models—visuals and files ready for
-                manufacturing and prototyping.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Computer-Aided Design (CAD)</a>
-              </h4>
-              <p class="description">Accurate, well-documented CAD deliverables tailored for manufacturing and
-                assembly.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Drafting &amp; Technical Drawing</a>
-              </h4>
-              <p class="description">Precise drawings and annotations to reduce manufacturing ambiguity and speed up
-                production.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">3D Printing</a></h4>
-              <p class="description">
-                Rapid prototyping to accelerate your product development cycle. Turn digital designs into physical
-                models quickly and cost-effectively.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Machine Design</a></h4>
-              <p class="description">Custom machinery solutions tailored to your specific needs. Optimize performance
-                and efficiency in your manufacturing processes.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Computer-Aided Manufacturing</a>
-              </h4>
-              <p class="description">Seamless transition from design to production. Improve manufacturing accuracy and
-                reduce production time with CAM expertise.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p><b>Client and Colleague Perspectives</b></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
+    <!-- JSON-LD structured data -->
+    <!-- Small helper: ensure images without loading attribute lazy-load (skip eager images) -->
+    <script>
+      (function () {
+        try {
+          document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("img").forEach(function (img) {
+              if (
+                !img.hasAttribute("loading") &&
+                img.getAttribute("loading") !== "eager"
+              ) {
+                img.setAttribute("loading", "lazy");
               }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Victor's CAD and 3D modelling work helped our team reduce iteration time and clarify manufacturing
-                    requirements. Clear, professional deliverables and thoughtful design choices.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial.png" class="testimonial-img" alt="Client testimonial" loading="lazy" decoding="async">
-                <h3>Anonymous</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>While interning at our workshop, Victor showed strong diagnostic skills and practical troubleshooting
-                    ability. He learned quickly and consistently improved our repair workflows.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial.png" class="testimonial-img" alt="Client testimonial" loading="lazy" decoding="async">
-                <h3>Anonymous</h3>
-                <h4>Mechanic</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>As a peer, Victor consistently contributed clear CAD solutions and took time to explain methods and
-                    best practices—great collaborator and communicator.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial.png" class="testimonial-img" alt="Client testimonial" loading="lazy" decoding="async">
-                <h3>Anonymous</h3>
-                <h4>Student</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Victor contributed both accurate 2D drawings and solid 3D models, translating client requirements into
-                    practical technical specifications that accelerated development.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial.png" class="testimonial-img" alt="Client testimonial" loading="lazy" decoding="async">
-                <h3>Anonymous</h3>
-                <h4>Director</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>In our club projects, Victor's cross-disciplinary skills—combining mechanical insight with code—helped
-                    us prototype features faster and more reliably.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonial.png" class="testimonial-img" alt="Client testimonial" loading="lazy" decoding="async">
-                <h3>Anonymous</h3>
-                <h4>President (Club)</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p><b>Let's bring your idea to life.</b>
-          If you have a project, prototype, or product challenge, I offer consultation and freelance services to help you move from concept to production. Get in touch to discuss next steps.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>University of Ibadan, P.O.Box 200005</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0" aria-hidden="true"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p><a href="tel:+2347056682385">+234 (70) 5668 2385</a></p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>ibidunmoyevictor2@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-    <div class="copyright text-center ">
-  <p>© <span id="current-year"></span> <strong class="px-1 sitename">Victor Ibidunmoye</strong> <span>All Rights Reserved</span>
-  </p>
-    </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/vendor/php-email-form/validate.js" defer></script>
-  <script src="assets/vendor/aos/aos.js" defer></script>
-  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js" defer></script>
-
-  <!-- JSON-LD structured data -->
-  <!-- Small helper: ensure images without loading attribute lazy-load (skip eager images) -->
-  <script>
-    (function(){
-      try {
-        document.addEventListener('DOMContentLoaded', function(){
-          document.querySelectorAll('img').forEach(function(img){
-            if(!img.hasAttribute('loading') && img.getAttribute('loading') !== 'eager'){
-              img.setAttribute('loading','lazy');
-            }
+            });
           });
-        });
-      } catch(e){ console.error(e); }
-    })();
-  </script>
-  <script>
-    // Populate footer year dynamically to avoid stale copyright
-    (function(){
-      try {
-        var el = document.getElementById('current-year');
-        if(el){ el.textContent = new Date().getFullYear(); }
-      } catch(e){ console.error(e); }
-    })();
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Victor Ibidunmoye",
-    "url": "https://yourdomain.example/",
-    "sameAs": [
-      "https://x.com/eminence1410",
-      "https://www.instagram.com/mech__spawn",
-      "https://www.linkedin.com/in/victoribidunmoye"
-    ],
-    "jobTitle": "Mechanical Engineer",
-    "description": "Mechanical engineer, product designer and web developer specializing in CAD/CAM, 3D modelling and product development."
-  }
-  </script>
-
-</body>
-
+        } catch (e) {
+          console.error(e);
+        }
+      })();
+    </script>
+    <script>
+      // Populate footer year dynamically to avoid stale copyright
+      (function () {
+        try {
+          var el = document.getElementById("current-year");
+          if (el) {
+            el.textContent = new Date().getFullYear();
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Victor Ibidunmoye",
+        "url": "https://yourdomain.example/",
+        "sameAs": [
+          "https://x.com/eminence1410",
+          "https://www.instagram.com/mech__spawn",
+          "https://www.linkedin.com/in/victoribidunmoye"
+        ],
+        "jobTitle": "Mechanical & Product Design Engineer",
+        "description": "Mechanical and product design engineer specializing in manufacturable CAD, mechanical assemblies, and design for manufacturing."
+      }
+    </script>
+  </body>
 </html>
