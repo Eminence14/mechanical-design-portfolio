@@ -163,6 +163,10 @@ h6 {
   margin-bottom: 15px;
 }
 
+.header .logo a {
+  text-decoration: none !important;
+}
+
 .header .logo img {
   max-height: 32px;
   margin-right: 8px;
@@ -178,7 +182,7 @@ h6 {
 }
 
 .header .social-links {
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
 }
 
 .header .social-links a {
@@ -273,6 +277,7 @@ h6 {
   transition: 0.3s;
   width: 100%;
   margin-bottom: 5px;
+  text-decoration: none !important;
 }
 
 .navmenu a .navicon,
@@ -311,6 +316,8 @@ h6 {
 .navmenu .active,
 .navmenu .active:focus {
   color: #fff;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 15px;
 }
 
 .navmenu a:hover .navicon {
@@ -576,11 +583,7 @@ section,
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: linear-gradient(
-      180deg,
-      rgba(2, 6, 23, 0.72),
-      rgba(2, 6, 23, 0.45)
-    ),
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.6)),
     linear-gradient(90deg, rgba(6, 182, 212, 0.06), rgba(59, 130, 246, 0.03));
   backdrop-filter: blur(2px);
 }
@@ -596,19 +599,25 @@ section,
   font-size: clamp(32px, 6vw, 64px);
   font-weight: 800;
   letter-spacing: -1px;
-  color: var(--contrast-color);
-  text-shadow: 0 4px 18px rgba(37, 99, 235, 0.18);
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   font-family: var(--heading-font);
 }
 
 .hero-subtitle {
-  color: #e0e7ef;
+  color: #e2e8f0;
   margin-top: 8px;
-  font-size: clamp(15px, 1.6vw, 20px);
+  font-size: 1.25rem;
   display: inline-block;
-  max-width: 65ch;
+  max-width: 100%;
   line-height: 1.5;
   font-family: var(--default-font);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* text-align: center; */
+}
+
+.hero-subtitle strong {
+  color: #38bdf8;
 }
 
 .hero .btn {
@@ -996,7 +1005,6 @@ section,
   color: rgba(255, 255, 255, 0.9);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
   left: calc(50% - 40px);
@@ -1007,7 +1015,6 @@ section,
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
 .portfolio .portfolio-content .portfolio-info .details-link:hover {
   color: var(--accent-color);
 }
@@ -1066,11 +1073,12 @@ section,
   font-size: 18px;
 }
 
-.services .service-item .title a {
+.services .service-item .title {
   color: var(--heading-color);
+  transition: 0.3s;
 }
 
-.services .service-item .title a:hover {
+.services .service-item:hover .title {
   color: var(--accent-color);
 }
 
