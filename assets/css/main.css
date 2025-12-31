@@ -49,8 +49,8 @@
 }
 
 /* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth !important;
 }
 
 /*--------------------------------------------------------------
@@ -518,6 +518,7 @@ section,
   background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
+  scroll-margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
